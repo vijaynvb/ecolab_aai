@@ -2,6 +2,8 @@
 Ecolab with agentic ai
 
 
+github.com/vijaynvb/ecolab_aai
+
 bit.ly/apisecrets
 
 
