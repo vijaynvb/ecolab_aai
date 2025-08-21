@@ -11,3 +11,4 @@ project -> endpoint1 - key
             1. gpt-4o - endpoints3 key
             2. textembeding - endpoints4 key
     2. region2 - endpoint2 - max
+    
