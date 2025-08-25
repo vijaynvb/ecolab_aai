@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-openai
+faiss-cpu
+streamlit
+python-dotenv
+PyPDF2
+altair
+tiktoken
+azure-search-documents
