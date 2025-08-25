@@ -1,0 +1,37 @@
+langchain
+langchain_community
+langchain-openai
+openai
+python-dotenv
+pypdf
+tiktoken
+faiss-cpu
+tavily-python
+streamlit
+# Core Python packages
+numpy
+pandas
+# Azure SDKs
+azure-core
+azure-cognitiveservices-vision-computervision
+azure-cognitiveservices-vision-contentmoderator
+azure-cognitiveservices-vision-face
+azure-cognitiveservices-vision-customvision
+azure-ai-formrecognizer
+azure-ai-textanalytics
+azure-ai-language-conversations
+azure-cognitiveservices-speech
+azure-search-documents
+#azure-contentmoderator
+azure-ai-contentsafety
+azure-ai-vision-imageanalysis
+azure-ai-translation-text
+azure-ai-documentintelligence
+msrest
+# Image processing
+Pillow
+opencv-python
+# HTTP requests
+requests
+# Data visualization
+matplotlib

@@ -65,6 +65,33 @@ def get_vectorstore(text_chunks):
     st.success("PDF loaded and indexed in Azure AI Search")
     return vectorstore
 
+# delete some documents from the azure ai search vector db
+
+def delete_documents_from_vectorstore(vectorstore, doc_ids):
+    for doc_id in doc_ids:
+        AzureSearch.delete_document(vectorstore, doc_id)
+    st.success("Selected documents deleted from Azure AI Search")
+    return vectorstore
+
+# list all the documents in the azure ai search vector db
+
+def list_documents_in_vectorstore(vectorstore):
+    documents = []
+    skip = 0
+    top = 1000 # Max value for 'top'
+    
+    while True:
+        results = vectorstore.search(query="", search_type="similarity")
+        current_batch = list(results) # Convert results to a list
+        print(current_batch)
+        if not current_batch:
+            break # No more documents
+    
+        documents.extend(current_batch)
+        skip += len(current_batch)
+    print(documents)
+    return documents
+
 # This method initializes a conversational retrieval chain using a language model and a vector store
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
@@ -176,6 +203,9 @@ def main():
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(
                     vectorstore)
+                
+                list_documents_in_vectorstore(vectorstore)
+                
 
 
 if __name__ == '__main__':

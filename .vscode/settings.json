@@ -1,0 +1,10 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [],
+    "python.defaultInterpreterPath": "/Users/vijay/Desktop/EcoLab/workspace/ecolab_aai/.venv/bin/python",
+    "terminal.integrated.env.osx": {
+      "VIRTUAL_ENV": "/Users/vijay/Desktop/EcoLab/workspace/ecolab_aai/.venv",
+      "PATH": "/Users/vijay/Desktop/EcoLab/workspace/ecolab_aai/.venv/bin:${PATH}"
+    }
+
+}
